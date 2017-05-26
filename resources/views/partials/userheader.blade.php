@@ -3,7 +3,7 @@
                                  @if($contact->image_path != "")
                                  src="../images/{{$companyname}}/{{$contact->image_path}}"
                                  @else
-                                 src="../images/default_avatar.jpg"
+                                 src="../../images/default_avatar.jpg"
                 @endif />
     </div>
 

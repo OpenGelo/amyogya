@@ -13,14 +13,22 @@ class DepartmentsTableSeeder extends Seeder
      */
     public function run()
     {
+        \DB::table('departments')->delete();    
+        \DB::table('department_user')->delete();
+
         $createDep = new Department;
         $createDep->id = '1';
-        $createDep->name = 'Managment';
+        $createDep->name = 'Management';
         $createDep->save();
 
         \DB::table('department_user')->insert([
             'department_id' => 1,
             'user_id' => 1
+        ]);
+
+        \DB::table('department_user')->insert([
+            'department_id' => 1,
+            'user_id' => 2
         ]);
     }
 }
