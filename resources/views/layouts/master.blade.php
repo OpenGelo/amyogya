@@ -100,7 +100,7 @@
 
     <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" role="navigation">
         <div class="list-group panel">
-            <p class=" list-group-item" title=""><img src="{{url('../images/telkom.png')}}" alt="" class="img-responsive" style="width:160px;height:90px;"></p>
+            <p class=" list-group-item" title=""><img src="{{url('images/telkom_logo.png')}}" alt="" class="img-responsive" style="width:160px;height:90px;"></p>
             <a href="{{route('dashboard', \Auth::id())}}" class=" list-group-item" data-parent="#MainMenu"><i
                         class="glyphicon glyphicon-dashboard"></i> {{ __('Dashboard') }} </a>
             <a href="{{route('users.show', \Auth::id())}}" class=" list-group-item" data-parent="#MainMenu"><i
